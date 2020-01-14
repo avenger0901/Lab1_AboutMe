@@ -5,7 +5,7 @@ const total = document.getElementById('total');
 quizbutton.addEventListener('click', () =>{
 
     const Name = prompt('What is your name?');
-    const confirmation = confirm(`{$Name},Are you sure you are prepared to take the quiz?`);
+    const confirmation = confirm(`${Name},Are you sure you are prepared to take the quiz?`);
     if (confirmation === false) return;
     const answer1 = prompt('Do you like zebra?');
     const answer2 = prompt('Zebra don\'t drink water, Right?');
@@ -14,5 +14,5 @@ quizbutton.addEventListener('click', () =>{
     if (isYes(answer1)) count += 1;
     if (!isYes(answer2)) count += 1;
     if (isYes(answer3)) count += 1;
-    total.textContent = `${Name}, you got ${count} correct`;
+    total.textContent = `${Name}, you got ${count}/3 correct`;
 });
