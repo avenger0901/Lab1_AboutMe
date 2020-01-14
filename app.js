@@ -1,4 +1,5 @@
 import isYes from '/isYes.js';
+import percentF from '/percent.js';
 const quizbutton = document.getElementById('quiz');
 const total = document.getElementById('total');
 const red = document.getElementById('reward');
@@ -14,7 +15,8 @@ quizbutton.addEventListener('click', () =>{
     if (isYes(answer1)) count += 1;
     if (!isYes(answer2)) count += 1;
     if (isYes(answer3)) count += 1;
-    total.textContent = `${Name}, you got ${count}/3 correct.`;
+    const percentage = percentF(count, 3);
+    total.textContent = `${Name}, you got ${count}/3 correct. That is ${percentage.toFixed(2)} %`;
     if (count <= 3) {
         red.classList.add('notcorrect');
     }
