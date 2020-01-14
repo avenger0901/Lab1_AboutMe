@@ -1,7 +1,7 @@
 import isYes from '/isYes.js';
 const quizbutton = document.getElementById('quiz');
 const total = document.getElementById('total');
-
+const red = document.getElementById('reward');
 quizbutton.addEventListener('click', () =>{
 
     const Name = prompt('What is your name?');
@@ -14,5 +14,9 @@ quizbutton.addEventListener('click', () =>{
     if (isYes(answer1)) count += 1;
     if (!isYes(answer2)) count += 1;
     if (isYes(answer3)) count += 1;
-    total.textContent = `${Name}, you got ${count}/3 correct`;
+    total.textContent = `${Name}, you got ${count}/3 correct.`;
+    if (count <= 3) {
+        red.classList.add('notcorrect');
+    }
+
 });

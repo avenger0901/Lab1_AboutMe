@@ -31,4 +31,9 @@ header{
 .container{
     position: relative;
 }
-
+.reward{
+    color: yellow;
+}
+.notcorrect{
+    color:red;
+}
