@@ -1,0 +1,13 @@
+.hidden{
+    display: none;
+}
+.hidden-text{
+    display: none;
+}
+#hidden-text{
+    position: fixed;
+    left: 30px;
+    top: 250px;
+    font-size: 20px;
+    color: white;
+}

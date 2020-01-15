@@ -4,12 +4,16 @@ const computerNumber = Math.floor(Math.random() * 10) ;
 const chance_remain = document.getElementById('remaining');
 //add if function if input>computerNumner{tooHightooLow.textContent ='The number is too high'}
 const tooHightooLow = document.getElementById('hint');
+const img = document.getElementById('show-yoda');
+const showText = document.getElementById('hidden-text');
+
 let chances = 5;
+
 
 GuessButton.addEventListener('click', () =>{
     chances--;
     chance_remain.textContent = chances;
-    console.log(computerNumber);
+    //console.log(computerNumber);
     if (inputElement.value > computerNumber) {
         //console.log('angela');
         tooHightooLow.textContent = `Your number is too big`;
@@ -17,6 +21,8 @@ GuessButton.addEventListener('click', () =>{
         tooHightooLow.textContent = `Your number is too small`;
     } else {
         tooHightooLow.textContent = `You are right!`;
+        img.classList.remove('hidden');
+        showText.classList.remove('hidden-text');
     }
     
 
