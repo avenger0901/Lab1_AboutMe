@@ -1,3 +1,4 @@
+
 import compareNum from '/compareNum.js';
 const GuessButton = document.getElementById('guessbutton');
 const inputElement = document.getElementById('yournum');
@@ -36,3 +37,5 @@ GuessButton.addEventListener('click', () =>{
 
 
 });
+
+

@@ -1,4 +1,5 @@
 // IMPORT MODULES under test here:
+
 import compareNum from '../compareNum.js';
 
 const test = QUnit.test;
@@ -33,6 +34,5 @@ test('test numbers are higher', assert => {
     assert.equal(result, expected);
 });
     
-
 
 
