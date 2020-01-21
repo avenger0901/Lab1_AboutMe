@@ -8,29 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<header>About Me</header>
-<title>About Me</title>
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Common_zebra_1.jpg" height="200px" width="200px">
-<body>
-<ul>
-    <li>Every zebra straps are different</li>
-    <li>They from earth</li>
-    <li>They love water</li>
-</ul>
-<ol>
-    <li>They are cute</li>
-    <li>They are kind</li>
-    <li>They are awesome</li>
-</ol>
-<div>
-    <button id="quiz"> Start Quiz</button>
+<header>Guessing Number Game</header>
+<div class="position">
+<div id="text-color">Your Number:[must from 0-20]</div><input id="yournum" type="number"></input> <button id="guessbutton">Guess Now</button>
+<span id="hint"></span>
+<div id="text-color"> Chances Remaining:<span id="remaining">5</span>
+<span id="won-loose"></span>
+<img id="show-yoda" class="hidden"src="https://image.cnbcfm.com/api/v1/image/106256503-1574274174070yoda.jpg?v=1574274186" height="200px" width="200px" >
+<span id="hidden-text" class="hidden-text">Right! You are.</span>
+</div> 
 </div>
-<section>
-    <h2>Your Results:</h2>
-    <p id="total"></p>
-</section>
+
 
     <script type="module" src="app.js"></script>
-</body>
+
+
 
 </html>
