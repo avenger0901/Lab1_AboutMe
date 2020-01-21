@@ -1,41 +1,42 @@
 body{
-    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/WgeRenM/videoblocks-gambling-blue-background-dice-card-suits-and-poker-chips-looping-animation_hkalnkeue_thumbnail-full01.png');
+
+    background-image: url("https://cdn.pixabay.com/photo/2019/07/09/07/01/background-4326353_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hidden{
-    display: none;
+
+ul,ol{
+    color: greenyellow;
+    text-align: left;
 }
-.hidden-text{
-    display: none;
-}
-#hidden-text{
-    position: fixed;
-    left: 30px;
-    top: 280px;
-    font-size: 20px;
-    color: white;
+
+#quiz{
+    color:blue;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: sandybrown;
+    font-size: 15px;
 }
 header{
-    font-size: 50px;
-    color: white;
+    font-size: 30px;
+  
 }
-#text-color{
+.text-block{
+    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    bottom:15px;
+    left: 200px;
+    color: black;
+
+}
+.container{
+    position: relative;
+}
+.reward{
     color: yellow;
 }
-button{
-    background-color: tomato;
-    border-radius: 13px;
+.notcorrect{
+    color:red;
 }
-#hint{
-    color: yellowgreen;
-}
-#show-yoda{
-    position: fixed;
-    left: 10px;
-    top: 130px;
-}
-/*.position{
-    position: relative;
-    top: 150px;
-}*/
+
+
