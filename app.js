@@ -1,3 +1,4 @@
+
 import isYes from '/isYes.js';
 import percentF from '/percent.js';
 const quizbutton = document.getElementById('quiz');
@@ -28,3 +29,4 @@ quizbutton.addEventListener('click', () =>{
     }
 
 });
+
